@@ -4,29 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>body</title>
+    <style>
+        header, footer 
+        {
+            background-color: tomato;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            padding: 5px;
+        }
+        footer
+        {
+            font-size: 15px;
+        }
+        section
+        {
+            height: 450px;
+        }
+        nav div
+        {
+            color: blue;
+            background-color: turquoise;
+            border: 2px solid tomato;
+            width: 200px;
+            margin: 2px;
+            text-align: center;
+        }
+        aside, article
+        {
+            border: 2px dotted tomato;
+            width: 200px;
+            height: 100px;
+            float: right;
+        }
+        article
+        {
+           margin-top: -10px;
+        }
+        figure
+        {
+            text-align: center;
+            border: 2px solid tomato;
+            width: 200px;
+            padding: 10px; 
+            position: fixed;
+            left: 400px;
+            top: 50px;
+        }
+    </style>
 </head>
-<body>
+<body bgcolor="lightgreen" text="red">
     <header>
         <div>TechGrafico</div>
     </header>
     <section>
         <nav>
-            <div>home</div>
+            <div>Home</div>
             <div>About</div>
             <div>contect us</div>
             <div>TechGrafico</div>
         </nav>
+        <div>Lorem ipsum dolor sit, <strong>Lorem ipsum, </strong> amet consectetur adipisicing elit. <br> <span> Repudiandae </span> labore qui,<br> voluptates </div>
+
         <main>
+            <dialog open>
+                <div>any qurey</div>
+                <div>chat whit me</div>
+            </dialog>
             <article>sale 90% off</article>
             <figure>
                 <img src="img/ID.png" width="100px" alt="id card">
                 <figcaption>Id cards</figcaption>
             </figure>
         </main>
-        <dialog open>
-            <div>any qurey</div>
-            <div>chat whit me</div>
-        </dialog>
+        
         <aside>
             add here....
         </aside>
