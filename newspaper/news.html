@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indiapress</title>
+    <style>
+        body{
+                background-image: url("../img/newsbackground.gif");
+            }
+            .container{
+                width: 100%;
+            }
+            .container .logo{
+                margin-top: 50px;
+                margin-right: 10%;
+            }
+            .content{
+                background-color: rgba(255, 255, 238, 0.8);
+                display: grid;
+                grid-template-columns:2.5fr 7fr 2.5fr;
+                grid-gap: 20px;
+                
+            }
+            
+            header {
+                background-color: orange;
+                color:white;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: Arial;
+                display: flex;
+                justify-content: space-between;
+                grid-row: 1;
+                grid-column: 1/4;
+            }
+            .nav-header{
+                padding: 5px;
+                background-color: brown;
+                color:white;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .nav-footer{
+                padding: 5px;
+                background-color:orange;
+                color:white;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 10px;
+            }
+            footer {
+                background-color: green;
+                color:white;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: Arial;
+                display: flex;
+                justify-content: space-evenly;
+                grid-row: 3;
+                grid-column: 1/4;
+            }
+            nav {
+                background-color: #FFF0F8;
+                grid-row:2;
+                grid-column: 1;
+            }
+            aside{
+                grid-row:2;
+                grid-column: 3;
+            }
+            main {
+                grid-row: 2;
+                grid-column: 2;
+            }
+            #bg{
+                background-color: burlywood;
+            }
+            ul{
+                list-style-image: url(../img/news\ bullet.gif);
+            }
+            .main-header{
+                padding: 2px;
+                background-color: brown;
+                color:white;
+                font-weight: bold;
+                text-align: center;
+            }
+            .main-main{
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+            }
+            .main-footer{
+                border: 1px solid black;
+                color: red;
+                text-align: center;
+                margin-top: 5px;
+            }
+            .left{
+                grid-row: 1;
+                grid-column: 1;
+                font-weight: bold;
+            }
+            .right{
+                grid-row: 1;
+                grid-column: 2;
+                font-weight: bold;
+            }
+            .subh{
+                font-size: 15px;
+            }
+            aside{
+                margin-left: 20%;
+            }
+            aside img{
+                margin-bottom: 15%;
+            }
+            aside a{
+                color: brown;
+                margin-left: 20%;
+                font-weight: bold;
+            }
+            .ku{
+                margin-top: 10%;
+            }
+            .t1 .t2 .t2{
+                font-weight: bold;                
+            }
+            .t1{
+                background-color: chocolate;
+                color: black;
+            }
+            .t2{
+                background-color: rebeccapurple;
+                color: black;
+            }
+            .t3{
+                background-color:cornflowerblue;
+                color: black;
+            }
+            .footer-con{
+                margin-left: 10%;
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+            }
+            .f1 .f2 .f3{
+                grid-row: 1;
+            }
+            .f1{
+                grid-column: 1;
+            }
+            .f2{
+                grid-column: 2;
+            }
+            .f3{
+                grid-column: 3;
+            }
+            .f4{
+                grid-row: 2;
+                grid-column: 1/4;
+                font-size: 10px;
+                text-align: center;
+                margin-top: 2%;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img  class="logo"  src="../img/news logo.gif" alt="Indiapress">
+        </div>
+        <div class="content">
+          <header>
+             <div>Vol 336 | Year 20</div>
+             <div>December 1</div>
+             <div>India News Papers Links & India News</div>
+          </header>
+          <nav>
+            <div class="nav-header">
+                Language News Papers
+            </div>
+            <div>
+                <ul>
+                    <li><a href="http://techgrafico.in">Assamese Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Assamese Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Assamese Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Assamese Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Assamese Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Assamese Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Assamese Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Assamese Newspaper</a></li>
+                    <li><a href="http://techgrafico.in">Bengali Newspaper</a></li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                Members Personal Pages
+            </div>
+          </nav>
+          <main>
+            <p>We provide free online newspapers links to all Indian language newspapers without downloading their fonts including all regional newspapers of India in languages like Tamil, Hindi, Urdu, Telugu, Malayalam, Punjabi, Marathi, Bengali, Kannada, Gujarati, Konkani, Oriya, Assamese and English, etc. 
+            </p>
+            <p id="bg">
+                Members can now build their customize free home pages upload their Picture, logo and contact information also can select newspapers, news and check other pop3 mails. <a href="http://techgrafico.in">
+                Click to join free Membership</a></p>
+                <div>
+                    <div class="main-header">
+                        TOP 10 INDIAN NEWSPAPERS VISITED FROM OUR SITE
+                    </div>
+                    <div class="main-main">
+                        <div class="left">
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                   <a href="http://techgrafico.in"> Akila Daily</a> (808620 Hits)
+                                </div>
+                                <div class="subh">
+                                    Akila - Indian Newspaper in Gujarati Language from Rajkot Saurashtra.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-footer">
+                        Text Links here. Please click to <a href="mailto:techgrafico@techgrafico.in">contact us</a> 
+                    </div>
+                </div>
+                <img src="../img/en_aw_88x31.gif" alt="">
+                <img src="../img/ip.gif" align="right" alt="">
+          </main>
+          <aside>
+            <img src="../img/add.png">
+            <div>
+                <a href="http://techgrafico.in">Techgrafico</a>
+                <a href="http://techgrafico.in">Techgrafico</a>
+                <a href="http://techgrafico.in">Techgrafico</a>
+            </div>
+            <div class="ku">
+                <a class="t1" href="http://techgrafico.in">Techgrafico</a>
+                <a class="t2" href="http://techgrafico.in">Techgrafico</a>
+                <a class="t3" href="http://techgrafico.in">Techgrafico</a>
+            </div>
+            
+          </aside>
+          <footer>
+             <div><a>Contact Us</a></div>
+             <div><a>Advertisement</a></div>
+             <div><a>Disclaimer</a></div>
+             <div><a>Sitemap</a></div>
+             
+          </footer>
+
+        </div>
+      </div>
+      <div class="footer-con">
+        <div class="f1">
+            <div>
+                <a href="http://techgrafico.in">Dharma  </a> - Hindi site on Shiv Shankar
+            </div>
+            <div>
+                <a href="http://techgrafico.in">Dharma  </a> - Hindi site on Shiv Shankar
+            </div>
+        </div>
+        <div class="f2">
+            <div>
+                <a href="http://techgrafico.in">Dharma  </a> - Hindi site on Shiv Shankar
+            </div>
+            <div>
+                <a href="http://techgrafico.in">Dharma  </a> - Hindi site on Shiv Shankar
+            </div>
+        </div>
+        <div class="f3">
+            <div>
+                <a href="http://techgrafico.in">Dharma  </a> - Hindi site on Shiv Shankar
+            </div>
+            <div>
+                <a href="http://techgrafico.in">Dharma  </a> - Hindi site on Shiv Shankar
+            </div>
+        </div>
+        <div class="f4">
+            <div>
+                  
+                Copyright &copy; by [<a href="http://techgrafico.in"></a> Indiapress.org </a>]. All rights reserved.
+            </div>
+            <div>
+                Developed and designed by Jagdish Purohit
+            </div>
+        </div>
+    </div>
+</body>
+</html>
