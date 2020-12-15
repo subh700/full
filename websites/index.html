@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../font/fonts/css/all.css">
+    <style>
+        .row{
+            display: grid;
+            grid-template-columns: 3f 9fr;
+            background-color: red;
+        }
+        .btn{
+            margin: 0%;
+            padding: 0%;
+        }
+    </style>
+</head>
+<body>
+    <!-- override style(background-color)-->
+    <div class="row" style="background-color: pink; text-decoration: none;">
+        <div>
+            <ul>
+                <li><a href="home.html" target="ifr"><span class="fa fa-home"></span> Home</a></li>
+                <li><a href="ele.html" target="ifr"><span class="fa fa-tv"></span> Electronic</a></li>
+                <li><a href="footware.html" target="ifr"><span class="fa fa-shoe-prints"></span> footware</a></li>
+                <li><a href="fashion.html" target="ifr"><span class="fa fa-tshirt"></span> fashion</a></li>
+                <li><a href="https://techgrafico.in" target="ifr">TechGrafico</a></li>
+            </ul>
+        </div>
+        <div>
+            <iframe name="ifr" width="1080px" height="720px"></iframe>
+        </div>
+    </div>
+    <button class="btn">submit</button>
+</body>
+</html>
