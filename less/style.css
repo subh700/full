@@ -1,0 +1,15 @@
+p {
+  color: #232323;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+p .intro {
+  font-variant: small-caps;
+  font-size: 16px;
+  line-height: 24px;
+}
+p .highlight {
+  color: #00214D;
+  font-weight: bold;
+}

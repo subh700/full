@@ -1,0 +1,27 @@
+@textColor: #232323;  
+@textHighlight: #00214D;  
+@fontFamily: Helvetica, Arial, sans-serif;  
+@fontSize: 14px;  
+@lineHeight: 21px;  
+  
+@introSize: 16px;  
+@introLineHeight: 24px;  
+@introFontVariant: small-caps;  
+  
+// Less for Paragraph  
+// ------------------  
+p {  
+ color: @textColor;  
+ font-family: @fontFamily;  
+ font-size: @fontSize;  
+ line-height: @lineHeight;  
+ .intro {  
+  font-variant: @introFontVariant;  
+  font-size: @introSize;  
+  line-height: @introLineHeight;  
+ }   
+ .highlight {  
+  color: @textHighlight;  
+  font-weight: bold;  
+ }   
+}  
