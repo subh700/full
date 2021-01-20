@@ -1,0 +1,40 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: tomato;
+    width: 90%;
+}
+
+.card-header:hover {
+    background-color: turquoise;
+}
+
+.card {
+    background-color: lightsteelblue;
+}
+
+.container-fluid h1 {
+    font-weight: bold;
+    font-weight: 900;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+.form-group span {
+    margin-left: 100px;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+}
+
+.card-header {
+    background-color: lightslategray;
+}
+
+.card-footer {
+    background-color: lightpink;
+}

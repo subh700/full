@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HOTEL REGISTRATION</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            background-color: tomato;
+            width: 90%;
+        }
+    </style>
+    <script>
+        function RegisterClick() {
+            document.getElementById("lblName").innerHTML = document.getElementById("txtName").value;
+            document.getElementById("lblDate").innerHTML = document.getElementById("txtDate").value;
+            document.getElementById("lblDays").innerHTML = document.getElementById("txtDays").value;
+            document.getElementById("lblPersons").innerHTML = document.getElementById("txtPersons").value;
+
+
+            var Total = 0;
+            var Balance = 0;
+            var roomName = "";
+            var roomCost = 0;
+            var amenitiesName = "";
+            var amenitiesCost = 0;
+
+            var optDelux = document.getElementById("optDelux");
+            var optSuite = document.getElementById("optSuite");
+            if (optDelux.checked) {
+                roomName = optDelux.value;
+                roomCost = 2500;
+            } else if (optSuite.checked) {
+                roomName = optSuite.value;
+                roomCost = 4000;
+            } else {
+                roomCost = 0;
+            }
+            var optAc = document.getElementById("optAc");
+            var optLocker = document.getElementById("optLocker");
+            if (optAc.checked) {
+                amenitiesCost = 1000;
+                amenitiesName += optAc.value + "<br>";
+                amenitiesCost = amenitiesCost + roomCost;
+            }
+            if (optLocker.checked) {
+                amenitiesCost = 300;
+                amenitiesName += optLocker.value + "<br>";
+                amenitiesCost = amenitiesCost + roomCost;
+            }
+            var advancecost = document.getElementById("optAdvance");
+            var optAdvance = document.getElementById("optAdvance");
+            var optRegister = document.getElementById("optRegister");
+
+
+            document.getElementById("lblAdvance").innerHTML = document.getElementById("optAdvance").value;
+
+
+
+            Total = (roomCost + amenitiesCost) * 2;
+            Balance = Total - advancecost;
+            document.getElementById("lblType").innerHTML = roomName;
+            document.getElementById("lblAmenities").innerHTML = amenitiesName;
+            document.getElementById("lblBalance").innerHTML = Balance;
+
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <div id="maincarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../../images/Hotelbanner.png">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../../images/Hotelbanner1.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <!--CUSTOMER INFO-->
+        <div class="accordion" id="RegisterForm">
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-dark text-white btn-block" data-target="#CustomerInfo" data-toggle="collapse">Customer Info</button>
+                </div>
+                <div class="collapse" id="CustomerInfo" data-parent="#RegisterForm">
+                    <div class="form-group">
+                        <label>Customer Name</label>
+                        <div>
+                            <input type="text" id="txtName" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Check In Date</label>
+                        <div>
+                            <input type="date" id="txtDate" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Total No Of Days</label>
+                        <div>
+                            <input type="number" id="txtDays" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Total No Of Persons</label>
+                        <div>
+                            <input type="number" id="txtPersons" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CUSTOMER INFO END-->
+
+
+            <!--SELECT ROOM-->
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-dark text-white btn-block" data-target="#RoomType" data-toggle="collapse">Select Room Type</button>
+                </div>
+                <div class="collapse" id="RoomType" data-parent="#RegisterForm">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>Luxury</h3>
+                                </div>
+                                <div class="card-body">
+                                    <img src="../img/del room.jpeg" width="600" height="200">
+                                </div>
+                                <div class="card-footer">
+                                    <h5>
+                                        <input type="radio" id="optDelux" value="DeluxRoom" name="room">Delux Room
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>AC</h3>
+                                </div>
+                                <div class="card-body">
+                                    <img src="../img/sut room.jpeg" width="600" height="200">
+                                </div>
+                                <div class="card-footer">
+                                    <h5>
+                                        <input type="radio" name="room" id="optSuite" value="SuiteRoom">Suite Room
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--SELECT ROOM END-->
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-dark text-white btn-block" data-target="#selectAmenities" data-toggle="collapse">Select Amenities</button>
+                </div>
+                <div class="collapse" id="selectAmenities" data-parent="#RegisterForm">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>A/C</h3>
+                                </div>
+                                <div class="card-body">
+                                    <img src="../img/ac.jpeg" width="600" height="200">
+                                </div>
+                                <div class="card-footer">
+                                    <h5>
+                                        <input type="checkbox" value="AcRoom" id="optAc">A/C
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>Locker</h3>
+                                </div>
+                                <div class="card-body">
+                                    <img src="../img/loker.jpeg" width="600" height="200">
+                                </div>
+                                <div class="card-footer">
+                                    <h5>
+                                        <input type="checkbox" id="optLocker" value="Locker">Locker
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-dark text-white btn-block" data-target="#AdvanceInfo" data-toggle="collapse">Advance Amount</button>
+                </div>
+                <div class="colllapse" id="AdvanceInfo" data-parent="#RegisterForm">
+                    <div class="form-group">
+                        <label>Advance Amount</label>
+                        <div>
+                            <input type="text" class="form-control" id="optAdvance">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button onclick="RegisterClick()" class="btn btn-primary btn btn-block" data-target="#billSummary" data-toggle="modal" id="optRegister">Register</button>
+    <div class="modal fade" id="billSummary">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Bill Summary</h3>
+                    <button class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover bg-dark text-white">
+                        <tbody>
+                            <tr>
+                                <td>Customer Name</td>
+                                <td id="lblName"></td>
+                            </tr>
+                            <tr>
+                                <td>Check in Date</td>
+                                <td id="lblDate"></td>
+                            </tr>
+                            <tr>
+                                <td>Total No Of Days</td>
+                                <td id="lblDays"></td>
+                            </tr>
+                            <tr>
+                                <td>Total No Of Persons</td>
+                                <td id="lblPersons"></td>
+                            </tr>
+                            <tr>
+                                <td>Room Type</td>
+                                <td id="lblType"></td>
+                            </tr>
+                            <tr>
+                                <td>Amenities</td>
+                                <td id="lblAmenities"></td>
+                            </tr>
+                            <tr>
+                                <td>Advance Amount</td>
+                                <td id="lblAdvance"></td>
+                            </tr>
+                            <tr>
+                                <td>Total cost</td>
+                                <td id="Total"></td>
+                            </tr>
+                            <tr>
+                                <td>Balance Amount</td>
+                                <td id="lblBalance"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

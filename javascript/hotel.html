@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Regestation</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/jquery/dist/jquery.js">
+
+    <style>
+        h1 {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        
+        form {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        
+        .customer {
+            margin-right: 2px;
+            margin-left: 2px;
+        }
+        
+        .rad {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="cinfo">
+        <div>
+            <h1>Customer Info</h1>
+            <form action="">
+
+                <label class="cust" for="cname">Customer Name</label>
+                <input type="text" id="cname" name="cuname" placeholder="Subham kumar" class="customer"><br>
+                <label class="cust" for="cdate">Check in Date</label>
+                <input type="date" id="cdate" name="chdate" class="customer"><br>
+                <label class="cust" for="tday">Total no. of Days</label>
+                <input type="number" id="tday" name="today" class="customer"><br>
+                <label class="cust" for="tperson">Total person</label>
+                <input type="number" id="tperson" name="toperson" class="customer">
+            </form>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h1>Select Room Type</h1>
+            <div class="rad">
+                <div>
+                    <img src="../img/del room.jpeg" alt="">
+                    <label class="ckb">
+                        <input type="radio" name="RA" checked>
+                        <i></i> delux room
+                      </label>
+                </div>
+                <div>
+                    <img src="../img/sut room.jpeg" alt="">
+                    <label class="ckb">
+                    <input type="radio" name="RA" >
+                    <i></i> suite room
+                  </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Select Amenities</h1>
+        <div class="chk">
+            <div>
+                <img src="../img/ac.jpeg" alt="">
+                <label for="">
+                    <input type="checkbox" name="ch1">
+                    AC
+                </label>
+            </div>
+            <div>
+                <img src="../img/loker.jpeg" alt="">
+                <label for="">
+                    <input type="checkbox" name="ch2">
+                    LOCKER
+                </label>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Advance Amount</h1>
+        <label> Advance Amount 	(&#8377;) 
+            <input type="number" id="advance">
+            </label>
+    </section>
+</body>
+
+</html>
