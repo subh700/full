@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Enter Pin</title>
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        var User = {
+            Pin: '5234'
+        };
+        var Attempt = 3;
+
+        function SubmitClick() {
+            var txtPwd = document.getElementById("txtPwd");
+            var btnSubmit = document.getElementById("btnSubmit");
+            var msg = document.getElementById("msg");
+            if (User.Pin == txtPwd.value) {
+                location.href = "../flipkart.html";
+                alert("Submit Successfully");
+                txtPwd.value = "";
+                msg.innerHTML = "";
+            } else {
+                Attempt--;
+                msg.innerHTML = `<h3>Invalid Pin..You have ${Attempt} attempt left</h3>`.fontcolor('blue');
+                txtPwd.value = "";
+
+            }
+            if (Attempt == 0) {
+                txtPwd.disabled = true;
+                btnSubmit.disabled = true;
+                alert("You have tried More than 3 Times..Blocked");
+                txtPwd.value = "";
+                msg.innerHTML = "";
+
+            }
+
+        }
+    </script>
+
+</head>
+
+<body class="container-fluid">
+    <div class="fa-box-tissue">
+        <label class="text-dark"><b><h3>Enter Pin:</h3></b></label>
+        <input type="password" id="txtPwd" placeholder="Enter Pin"> <button class="btn-success" id="btnSubmit" onclick="SubmitClick()" class="btn btn-dark text-white" id="btnSubmit">Submit</button>
+    </div>
+    <div id="msg" class="text-center"></div>
+
+</body>
+
+</html>
